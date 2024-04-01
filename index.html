@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos de Contos</title>
+        <link rel="stylesheet" href="paa.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+            $(document).ready(function(){
+    $("#burger").click(function(){
+        $("#menu").fadeToggle("fast");
+    });
+    });
+
+        </script>
+        <style>
+            #map{
+                width: 100%;
+                height: 100vh;
+            }
+        </style>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="mapa.js"></script>
+        
+    </head>
+    <body>
+    <div id="menu" class="menu">
+        <div class="bg_menu"></div>
+        <div class="list">
+            <ul>
+                <div class="li_h">
+                    <li class="cap">-Prólogo-</li>
+                    <li class="livraria"><a href="https://www.essr.net/cdcomunicacao/al7548/PAA/">Pontos de Contos</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_m">
+                    <li class="cap">-Capítulo 1-</li>
+                    <li class="livraria"><a href="mun_fan.html">Mundo Fantasma</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_c">
+                    <li class="cap">-Capítulo 2-</li>
+                    <li class="livraria"><a href="conf_ver.html">Confraria Vermelha</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_p">
+                    <li class="cap">-Capítulo 3-</li>
+                    <li class="livraria"><a href="poetria.html">Poetria</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_l">
+                    <li class="cap">-Capítulo 4-</li>
+                    <li class="livraria"><a href="lello.html">Lello</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_ch">    
+                    <li class="cap">-Capítulo 5-</li>
+                    <li class="livraria"><a href="chamine_da_mota.html">Chaminé da Mota</a></li>
+                    <div class="mark"></div>
+                </div>
+        </ul>
+        </div>
+    </div>
+    <div id="burger" class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+        </script>
+    </div>
+    <div id="header" class="header">
+        <div class="titulo">
+        <h1>Pontos de Contos</h1>
+            <h2>Roteiro de livrarias</h2>
+        </div>
+        <div id="bg">
+        <img class="bg_img" src="img/bg_img_home.png" >
+        <img class="resp" src="img/resp_home_bg_1.png">
+        <img class="resp_mbl" src="img/resp_home_bg_2.png">
+        </div>
+    </div>
+        <ul id="home_li">
+            <a href="mun_fan.html"><li id="mf_li">
+                <img class="icon_v icon" src="img/icon.svg" alt="">
+                <h2>Mundo Fantasma</h2>
+                <img class="icon_l icon" src="img/icon.svg" alt="">
+                <p>“A Banda Desenhada quase toda.”</p>
+                <img class="icon_r icon" src="img/icon.svg" alt="">
+                </li></a>
+            <a href="conf_ver.html"><li id="cv_li">
+                <img class="icon_v icon" src="img/icon.svg" alt="">
+                <h2>Confraria Vermelha</h2>
+                <img class="icon_l icon" src="img/icon.svg" alt="">
+                <p>“O quarto próprio para as mulheres.”</p>
+                <img class="icon_r icon" src="img/icon.svg" alt="">
+                </li></a>
+            <a href="poetria.html"><li id="pt_li">
+                <img class="icon_v icon" src="img/icon.svg" alt="">
+                <h2>Poetria</h2>
+                <img class="icon_l icon" src="img/icon.svg" alt="">
+                <p>“A Poesia cura,
+O Teatro é vida.”</p>
+                <img class="icon_r icon" src="img/icon.svg" alt="">
+                </li></a>
+            <a href="lello.html"><li id="ll_li">
+                <img class="icon_v icon" src="img/icon.svg" alt="">
+                <h2>Lello</h2>
+                <img class="icon_l icon" src="img/icon.svg" alt="">
+                <p>“A livraria mais bela do mundo.”</p>
+                <img class="icon_r icon" src="img/icon.svg" alt="">
+                </li></a>
+            <a href="chamine_da_mota.html"><li id="cm_li">
+                <img class="icon_v icon" src="img/icon.svg" alt="">
+                <h2>Chaminé da Mota</h2>
+                <img class="icon_l icon" src="img/icon.svg" alt="">
+                <p>“1 milhão de livros usados, raros e curiosos.”</p>
+                <img class="icon_r icon" src="img/icon.svg" alt="">
+                </li></a>
+        </ul>
+        <div class="intro">
+            <h2>"Com cada Ponto acrescenta-se um Conto"</h2>
+            <div class="pausa"></div>
+            <p>Pontos de Contos trata-se de um roteiro de livrarias, que consiste de livrarias curiosas e que têm um conto delas próprias.</p>
+        </div>
+        
+        
+        
+        <div id="map"></div>

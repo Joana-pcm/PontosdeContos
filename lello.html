@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lello</title>
+        <link rel="stylesheet" href="lello.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+            $(document).ready(function(){
+    $("#burger").click(function(){
+        $("#menu").fadeToggle("fast");
+    });
+     $(".bg_menu").click(function(){
+        $("#menu").fadeToggle("fast");
+    });
+    });
+
+        </script>
+        <style>
+            #mapa_ll{
+                width: 100%;
+                height: 100vh;
+                min-height: 500px;
+            }
+        </style>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="mapa_ll.js"></script>
+    </head>
+    <body>
+    <div id="menu" class="menu">
+        <div class="bg_menu"></div>
+        <div class="list">
+            <ul>
+                <div class="li_h">
+                    <li class="cap">-Prólogo-</li>
+                    <li class="livraria"><a href="https://www.essr.net/cdcomunicacao/al7548/PAA/">Pontos de Contos</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_m">
+                    <li class="cap">-Capítulo 1-</li>
+                    <li class="livraria"><a href="mun_fan.html">Mundo Fantasma</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_c">
+                    <li class="cap">-Capítulo 2-</li>
+                    <li class="livraria"><a href="conf_ver.html">Confraria Vermelha</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_p">
+                    <li class="cap">-Capítulo 3-</li>
+                    <li class="livraria"><a href="poetria.html">Poetria</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_l">
+                    <li class="cap">-Capítulo 4-</li>
+                    <li class="livraria"><a href="lello.html">Lello</a></li>
+                    <div class="mark"></div>
+                </div>
+                <div class="li_ch">    
+                    <li class="cap">-Capítulo 5-</li>
+                    <li class="livraria"><a href="chamine_da_mota.html">Chaminé da Mota</a></li>
+                    <div class="mark"></div>
+                </div>
+        </ul>
+        </div>
+    </div>
+    <div id="burger" class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+        </script>
+    </div>
+    <div id="header" class="header">
+        <div class="titulo">
+        <h1><span>L</span>ello</h1>
+        </div>
+        <div id="bg">
+        <img class="bg_img" src="img/lello_bg.png" >
+        <img class="resp" src="img/resp_bg_1.png">
+        <img class="resp_mbl" src="img/resp_bg_2.png">
+        </div>
+    </div>
+    <div class="content">
+        <div class="liv">
+        <div id="slider" class="w3-content w3-display-container">
+        <img class="mySlides slider_o" src="img/ll_1.jpg">
+        <img class="mySlides slider_o" src="img/ll_2.jpg">
+        <img class="mySlides slider_o" src="img/ll_3.jpg">
+        <button class="w3-button w3-display-left left" onclick="plusDivs(-1)"></button>
+        <button class="w3-button w3-display-right right" onclick="plusDivs(+1)"></button>
+            </div>
+            <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+        </div>
+        <div class="texto">
+        <h2 class="tag">Beauty</h2>
+        <div>
+            <h2 class="sobre">Sobre</h2>
+            <img src="img/lello_pausa.png" alt="">
+            <p>Quando entramos pelas portas desta renomeada livraria, com mais de cem anos, passamos para um espaço que traz-nos à fantasia dos livros com toda a sua beleza exuberante.</p>
+                <p>Damos por nós a deslumbrar as estantes de livros que levam o nosso olhar ate ao teto, neste encontramos decoração digna de uma catedral, a condizer com o resto do espaço decorado com o estilo da "Art Nouveau".</p>
+                <p>Prosseguimos por subir a escadaria curiosa da livraria, sendo maravilhados pelos vitrais se olharmos para cima, ou se formos para o lado, depois de subir, onde estão as janelas.</p>
+                <p>Desde os detalhes de madeira aos candeeiros peculiares, a beleza da Lello não pode ser simplesmente descrita, tem que ser vista.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="info">
+        <div id="info">
+            <h3>
+            Contactos
+            </h3>
+            <ul>
+            <li>22 200 2037</li>
+            <li>info@livrarialello.pt</li>
+            </ul>
+            <img src="img/ll_info.svg" alt="">
+            <h3>Horários</h3>
+            <ul>
+            <li class="dia">De segunda a sexta</li>
+                <li class="hora">10:00 - 19:30</li>
+            <li class="dia">De sábado a domingo</li>
+                <li class="hora">10:00 - 19:00</li>
+            </ul>
+            </div>
+        <div id="mapa_ll"></div>
+        </div>
+    </body>
+</html>
